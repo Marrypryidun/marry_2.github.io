@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Таблички</title>
+  <style>
+
+  div { border: 1px solid; }
+  span.t1 {
+      display: grid;
+      grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
+      grid-template-rows: 3em 3em 3em 3em 3em 3em 3em;
+      grid-template-areas:
+          "row1 row1 row1 row1 row1 row1 row1 "
+          "row2 row2 row2 row2 row2 row2 column7"
+          "row3 row3 row3 row3 row3 column6 column7"
+          "row4 row4 row4 row4 column5 column6 column7"
+          "row5 row5 row5 column4 column5 column6  column7"
+          "row6 row6 column3 column4 column5 column6 column7"
+          "row7 seven1 column3 column4 column5 column6 column7";
+          margin: 50px;
+  }
+  span.t2 {
+      display: grid;
+      grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
+      grid-template-rows: 3em 3em 3em 3em 3em 3em 3em;
+      grid-template-areas:
+          "row1 row1 row1 row1 row1 row1 column7 "
+          "row2 row2 row2 row2 row2 column6 column7"
+          "row3 row3 row3 row3 column5 column6 column7"
+          "row4 row4 row4 column4 column5 column6 column7"
+          "row5 row5 column3 column4 column5 column6  column7"
+          "row6 column2 column3 column4 column5 column6 column7"
+          "row7 column2 column3 column4 column5 column6 column7";
+          margin: 50px;
+  }
+  span.t3 {
+    display: grid;
+    grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
+    grid-template-rows: 3em 3em 3em 3em 3em 3em 3em;
+    grid-template-areas:
+        "rectangle1_1   rectangle2_12   rectangle3_1 rectangle4_12 rectangle5_1   rectangle6_12   rectangle7_1 "
+        "rectangle1_23  rectangle2_12   rectangle3_23 rectangle4_12 rectangle5_23  rectangle6_12   rectangle7_23 "
+        "rectangle1_23  rectangle2_34   rectangle3_23 rectangle4_34 rectangle5_23  rectangle6_34   rectangle7_23"
+        "rectangle1_45  rectangle2_34   rectangle3_45 rectangle4_34 rectangle5_45  rectangle6_34   rectangle7_45"
+        "rectangle1_45  rectangle2_56   rectangle3_45 rectangle4_56 rectangle5_45  rectangle6_56   rectangle7_45"
+        "rectangle1_67  rectangle2_56   rectangle3_67 rectangle4_56 rectangle5_67  rectangle6_56   rectangle7_67"
+        "rectangle1_67   rectangle2_7    rectangle3_67 rectangle4_7 rectangle5_67  rectangle6_7    rectangle7_67";
+        margin: 50px;
+  }
+  span.t4{
+    display: grid;
+    grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
+    grid-template-rows: 3em 3em 3em 3em 3em 3em 3em;
+    grid-template-areas:
+        "rectangle1_1 rectangle1_1  rectangle1_1  rectangle1_2 rectangle1_2  rectangle1_2  rectangle1 "
+        "rectangle2 rectangle2_1 rectangle2_1  rectangle2_1  rectangle2_2 rectangle2_2  rectangle2_2"
+        "rectangle3_1 rectangle3_1 rectangle3_2  rectangle3_2  rectangle3_2 rectangle3_3  rectangle3_3"
+        "rectangle4_1 rectangle4_1  rectangle4_1  rectangle4_2 rectangle4_2  rectangle4_2  rectangle4 "
+        "rectangle5 rectangle5_1 rectangle5_1  rectangle5_1  rectangle5_2 rectangle5_2  rectangle5_2"
+        "rectangle6_1 rectangle6_1 rectangle6_2  rectangle6_2  rectangle6_2 rectangle6_3  rectangle6_3"
+        "rectangle7_1 rectangle7_1  rectangle7_1  rectangle7_2 rectangle7_2  rectangle7_2  rectangle7 ";
+        margin: 50px;
+  }
+
+
+</style>
+</head>
+<body>
+<span class="t1">
+<div style="grid-area: row1">      </div>
+<div style="grid-area: row2">      </div>
+<div style="grid-area:column7 ">      </div>
+<div style="grid-area: row3">     </div>
+<div style="grid-area: column6">      </div>
+<div style="grid-area: row4">      </div>
+<div style="grid-area: column5">      </div>
+<div style="grid-area: row5">      </div>
+<div style="grid-area: column4">      </div>
+<div style="grid-area: row6">      </div>
+<div style="grid-area: column3">      </div>
+<div style="grid-area: row7">      </div>
+<div style="grid-area: seven1">      </div>
+</span>
+
+<span class="t2">
+  <div style="grid-area: row1">      </div>
+  <div style="grid-area: row2">      </div>
+  <div style="grid-area:column7 ">      </div>
+  <div style="grid-area: row3">     </div>
+  <div style="grid-area: column6">      </div>
+  <div style="grid-area: row4">      </div>
+  <div style="grid-area: column5">      </div>
+  <div style="grid-area: row5">      </div>
+  <div style="grid-area: column4">      </div>
+  <div style="grid-area: row6">      </div>
+  <div style="grid-area: row7">      </div>
+  <div style="grid-area: column3">      </div>
+  <div style="grid-area: column2">    </div>
+</span>
+<span class="t3">
+  <div style="grid-area: rectangle1_1">      </div>
+  <div style="grid-area: rectangle1_23">      </div>
+  <div style="grid-area:rectangle1_45 ">      </div>
+  <div style="grid-area: rectangle1_67">     </div>
+  <div style="grid-area: rectangle2_12">      </div>
+  <div style="grid-area: rectangle2_34">      </div>
+  <div style="grid-area: rectangle2_56">       </div>
+  <div style="grid-area: rectangle2_7">      </div>
+  <div style="grid-area: rectangle3_1">      </div>
+  <div style="grid-area: rectangle3_23">      </div>
+  <div style="grid-area:rectangle3_45 ">      </div>
+  <div style="grid-area: rectangle3_67">     </div>
+  <div style="grid-area: rectangle4_12">      </div>
+  <div style="grid-area: rectangle4_34">      </div>
+  <div style="grid-area: rectangle4_56">       </div>
+  <div style="grid-area: rectangle4_7">      </div>
+  <div style="grid-area: rectangle5_1">     </div>
+  <div style="grid-area: rectangle5_23">     </div>
+  <div style="grid-area:rectangle5_45 ">      </div>
+  <div style="grid-area: rectangle5_67">     </div>
+  <div style="grid-area: rectangle6_12">      </div>
+  <div style="grid-area: rectangle6_34">      </div>
+  <div style="grid-area: rectangle6_56">       </div>
+  <div style="grid-area: rectangle6_7">      </div>
+  <div style="grid-area: rectangle7_1">     </div>
+  <div style="grid-area: rectangle7_23">      </div>
+  <div style="grid-area:rectangle7_45 ">      </div>
+  <div style="grid-area: rectangle7_67">     </div>
+</span>
+<span class="t4">
+  <div style="grid-area: rectangle1_1">      </div>
+  <div style="grid-area: rectangle1_2">      </div>
+  <div style="grid-area:rectangle1 ">      </div>
+  <div style="grid-area: rectangle2_1">     </div>
+  <div style="grid-area: rectangle2_2">      </div>
+  <div style="grid-area:rectangle2 ">     </div>
+  <div style="grid-area: rectangle3_1">      </div>
+  <div style="grid-area: rectangle3_2">      </div>
+  <div style="grid-area:rectangle3_3 ">      </div>
+  <div style="grid-area: rectangle4_1">      </div>
+  <div style="grid-area: rectangle4_2">      </div>
+  <div style="grid-area:rectangle4 ">      </div>
+  <div style="grid-area: rectangle5_1">      </div>
+  <div style="grid-area: rectangle5_2">     </div>
+  <div style="grid-area:rectangle5 ">     </div>
+  <div style="grid-area: rectangle6_1">      </div>
+  <div style="grid-area: rectangle6_2">     </div>
+  <div style="grid-area:rectangle6_3 ">     </div>
+  <div style="grid-area: rectangle7_1">    </div>
+  <div style="grid-area: rectangle7_2">     </div>
+  <div style="grid-area:rectangle7 ">     </div>
+</span>
+
+</body>
+</html>

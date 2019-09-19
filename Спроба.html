@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Святий Грааль</title>
+      <style>
+
+        h1{
+          background: lightblue;
+          min-height: 120px;
+          border: 2px solid black;
+          margin: 0;
+        }
+        .centre{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        div.side{
+
+          width: 500px;
+          height: 600px;
+          background: violet;
+        }
+        div{
+            border: 2px solid black;
+        }
+        main{
+           display: flex;
+           flex-wrap:nowrap;
+        }
+        .content{
+          width: 1000px;
+          height: 600px;
+          background:pink;
+        }
+        @media all and (min-width: 600px) {
+      /* We tell both sidebars to share a row */
+      .main { flex: 1 auto; }
+    }
+      </style>
+
+</head>
+<body>
+  <h1 class="centre"> HEADER  </h1>
+  <main>
+    <div class="side">
+      <p class="centre"> MENU </p>
+      <p> ITEM 1</p>
+      <p> ITEM 2</p>
+      <p> ITEM 3</p>
+      <p> ITEM 4</p>
+      <p> ITEM 5</p>
+    </div>
+    <div class="content">
+        <h2 class="centre"> CONTENT </h2>
+        <p>--------------------Text-----------------------</p>
+    </div>
+    <div class="side">
+      <h2 class="centre">  AD </h2>
+     </div>
+  </main>
+  <h1 class="centre"> FOOTER  </h1>
+</body>
+</html>
